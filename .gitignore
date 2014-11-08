@@ -58,3 +58,6 @@ target/
 
 # C9
 .c9/
+
+# SQLlite
+.sqlite3
