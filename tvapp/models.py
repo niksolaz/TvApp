@@ -37,7 +37,7 @@ class Episode(models.Model):
     season = models.ForeignKey(Season)
     
     def __unicode__(self):
-        return "(TvShow: %s - Season %d) Episode: %d" % ( 
+        return "(TvShow %s - Season %d) Episode: %d" % ( 
             self.season.tv_show.title, 
             self.season.season_number, 
             self.episode_number
