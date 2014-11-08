@@ -61,3 +61,4 @@ target/
 
 # SQLlite
 .sqlite3
+remember_db.sqlite3
