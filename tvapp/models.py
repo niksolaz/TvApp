@@ -37,7 +37,7 @@ class Episode(models.Model):
     episode_number= models.IntegerField(default=1)
     summary = models.CharField(max_length=254)
     season = models.ForeignKey(Season)
-    release_date = models.DateTimeField('date published')
+    release_date = models.DateTimeField('date published', default=timezone.now())
     
     def __unicode__(self):
         return "(TvShow %s - Season %d) Episode: %d" % ( 
